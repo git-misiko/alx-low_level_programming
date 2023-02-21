@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _isalpha - checks if the character is alphabetic.
+ * _isalpha - checks if the character is alphabetic or not.
  * @c:  passed argument
  *
  * Return: 1 if alpha 0 if not
