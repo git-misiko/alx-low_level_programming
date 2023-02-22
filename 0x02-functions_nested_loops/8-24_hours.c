@@ -15,20 +15,34 @@ char a = '0';
 char b = '0';
 for (x = '0'; x < '3'; ++x)
 {
-	for (y = '0' ; y < '4';  ++y)
+	for (y = '0' ; y <= '9';  ++y)
 	{
 		for (a = '0' ; a < '6';  ++a)
 		{
 			for (b = '0' ; b <= '9';  ++b)
 			{
+
 				putchar(x);
 				putchar(y);
 				putchar(':');
 				putchar(a);
 				putchar(b);
 				putchar('\n');
+				if ((x == '2') && (y == '3') && (a == '5') && (b == '9'))
+				{
+					break;
+				}
+			}
+			if ((x == '2') && (y == '3') && (a == '5') && (b == '9'))
+			{
+				break;
 			}
 		}
+		if ((x == '2') && (y == '3') && (a == '5') && (b == '9'))
+		{
+			break;
+		}
 	}
+
 }
 }
