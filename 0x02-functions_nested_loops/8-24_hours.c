@@ -1,28 +1,35 @@
-//#include "main.h"
+#include "main.h"
 #include <stdio.h>
 /**
- * jack_bauer - function that prints every minute of the day of Jack Bauer,
- * starting from 00:00 to 23:59.
+ * main - A program that prints _putchar, followed
+ * by a new line.
  *
- * Return: end program.
+ * Return: Exit program.
  */
 
 int main(void)
 {
-	int i,j,k,l;
-
-	for(int i = 0; i <= 23 ; i++)
+char x = '0';
+char y = '0';
+char a = '0';
+char b = '0';
+for (x = '0'; x < '3'; ++x)
+{
+	for (y = '0' ; y < '4';  ++y)
 	{
-		putchar((i/10)+'0');
-		putchar((i%10)+'0');
-		printf("\n");
-		for(int j = 0; j <= 59 ; j++)
+		for (a = '0' ; a < '6';  ++a)
 		{
-			putchar((j/10)+'0');
-			putchar((j%10)+'0');
-			printf("\n");
+			for (b = '0' ; b <= '9';  ++b)
+			{
+				putchar(x);
+				putchar(y);
+				putchar(':');
+				putchar(a);
+				putchar(b);
+				putchar('\n');
+			}
 		}
 	}
-	
-	 return (0);
+}
+return (0);
 }
