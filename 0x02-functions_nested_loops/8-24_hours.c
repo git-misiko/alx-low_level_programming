@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - A program that prints _putchar, followed
- * by a new line.
+ * jack_bauer - a function that prints every minute of the day of Jack Bauer,
+ * starting from 00:00 to 23:59.
  *
  * Return: Exit program.
  */
 
-int main(void)
+void jack_bauer(void)
 {
 char x = '0';
 char y = '0';
@@ -31,5 +31,5 @@ for (x = '0'; x < '3'; ++x)
 		}
 	}
 }
-return (0);
+return (void);
 }
